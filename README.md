@@ -1,3 +1,4 @@
 # Red-Black-Tree
 During one of my courses, I was tasked with developing a red-black tree data structure entirely on my own. This entailed implementing the necessary functions for adding, removing, and searching elements within the tree. After completing this task, I was then instructed to utilize the red-black tree to construct a set, which involved incorporating set operations like union, intersection, and difference. To meet these requirements, I implemented the solution in both Python and Scheme programming languages.
+
 In both implementations, the code accesses the file named "data_struct(1000x1000).txt," which consists of 1000 rows. Each row contains 1000 values. The code proceeds to construct 1000 trees and inserts a row into each tree. Then, it performs a union operation on all the trees. Finally, the code deletes all the constructed trees.
