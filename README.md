@@ -1,1 +1,2 @@
 # Red-Black-Tree
+During one of my courses, I was tasked with developing a red-black tree data structure entirely on my own. This entailed implementing the necessary functions for adding, removing, and searching elements within the tree. After completing this task, I was then instructed to utilize the red-black tree to construct a set, which involved incorporating set operations like union, intersection, and difference. To meet these requirements, I implemented the solution in both Python and Scheme programming languages.
