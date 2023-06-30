@@ -185,21 +185,6 @@ class RedBlackTree():
                 break
         self.root.color = 0
 
-    def __print_helper(self, node, indent, last):
-        # print the tree structure on the screen
-        if node != self.TNULL:
-            sys.stdout.write(indent)
-            if last:
-                sys.stdout.write("R----")
-                indent += "     "
-            else:
-                sys.stdout.write("L----")
-                indent += "|    "
-            s_color = "RED" if node.color == 1 else "BLACK"
-            print(str(node.data) + "(" + s_color + ")")
-            self.__print_helper(node.left, indent, False)
-            self.__print_helper(node.right, indent, True)
-
     # search the tree for the key k
     # and return the corresponding node
     def searchTree(self, k):
@@ -331,9 +316,7 @@ class RedBlackTree():
     def delete_node(self, data):
         self.__delete_node_helper(self.root, data)
 
-    # print the tree structure on the screen
-    def pretty_print(self):
-        self.__print_helper(self.root, "", True)
+    
 
     def count_nodes(self, root):
         if root == GlobNullNode:
